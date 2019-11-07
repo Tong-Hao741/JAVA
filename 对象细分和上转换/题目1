@@ -1,0 +1,4 @@
+1）父类Employee:有一个方法earnings();
+（2）三个子类YearWorker、MonthWorker、WeekWorker:即公司里有三类不同领薪水方式的员工，在子类中重写earnings()方法，分别返回一年的年薪（200000元），月薪（8000元）*12，周薪（3000元）*52，月薪和周薪可以自己固定写一个值来表示；
+（3）公司类Company：用Employee类的对象数组employee作为成员变量；构造函数（参数是Employee的对象数组，把对象数组的引用赋值给成员变量）；计算总薪水salariesPay（），调用对象数组employ里的所有对象的earnings()，求和计算出所有员工的总的薪水；
+（4）主类中先定义公司的员工数组，一共有30名员工，Employee的对象数组可以是YearWorker、MonthWorker、WeekWorker的上转型对象，给员工分成三大类分别是拿年薪和月薪、周薪的员工（比如说前10个是年薪，中间10个是月薪，后10个是周薪），然后把30名员工的数组赋给公司company,最终把company的薪水总额输出。
