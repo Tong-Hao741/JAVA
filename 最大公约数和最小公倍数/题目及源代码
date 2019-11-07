@@ -27,4 +27,6 @@ public class Test {
 		System.out.println(minm1.fun(24, 5));
 	}
 
-}
+
+>>>1
+>>>120
