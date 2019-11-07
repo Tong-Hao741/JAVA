@@ -1,0 +1,30 @@
+public class MaxDivisor {
+	public int fun(int a,int b){
+		int m = 0;
+		while(b!=0){
+			m = a%b;
+			a = b;
+			b = m;
+		}
+		return a;
+	}
+}
+
+class MinMultiple extends MaxDivisor{
+	public int fun(int a,int b){
+		int m = super.fun(a, b);
+		return (a*b)/m;
+	}
+}
+//测试类============================================
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MaxDivisor maxd1 = new MaxDivisor();
+		MinMultiple minm1 = new MinMultiple();
+		System.out.println(maxd1.fun(24, 5));
+		System.out.println(minm1.fun(24, 5));
+	}
+
+}
